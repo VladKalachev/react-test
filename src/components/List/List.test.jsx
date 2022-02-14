@@ -11,6 +11,7 @@ describe('List component', () => {
     expect(screen.getByText('html')).toBeInTheDocument();
   })
 
+  
   it('List renders without data', () => {
     render(<List />);
 
