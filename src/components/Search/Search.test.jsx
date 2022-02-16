@@ -52,4 +52,12 @@ describe('Search component', () => {
     expect(onChange).toHaveBeenCalledTimes(5);
 
   })
+
+  it('dinamyc styles works', () => {
+    render(<Search value='abc' onChange={onChange} />)
+
+    expect(screen.getByRole('textbox')).toHaveClass('input');
+    expect(screen.getByRole('textbox')).toHaveClass('filled');
+    expect(screen.getByText('Search')).toHaveClass('label');
+  })
 });
