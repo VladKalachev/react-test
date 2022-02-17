@@ -21,6 +21,7 @@ describe('App component', () => {
     expect(screen.queryByDisplayValue(/React/)).toBeInTheDocument();
   });
 
+  
   it('search filter is working', () => {
     render(<App />);
 
